@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/tourism-img.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    display: flex;
+}
+
+/* Parte esqueda do site Navegação */
+aside {
+    padding: 20px;
+    background-color: #000;
+}
+
+.explore {
+    margin-bottom: 200px;
+}
+
+.explore button {
+    padding: 25px 80px;
+    color: #000;
+    background-color: #feab51;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.explore button:hover {
+    opacity: 0.8;
+}
+
+.explore button:active {
+    background-color: #d38c41;
+}
+
+.nav {
+    margin-bottom: 175px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    margin-bottom: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.nav ul li a:hover {
+    color: #feab51;
+}
+
+.more button {
+    padding: 25px 55px;
+    color: #000;
+    background-color: #feab51;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.more button:hover {
+    opacity: 0.8;
+}
+
+.more button:active {
+    background-color: #d38c41;
+}
+
+/* Conteudo */
+section {
+    margin-left: 60px;
+}
+
+section p {
+    font-size: 2rem;
+    color: #d38c41;
+    margin: 48px 0;
+}
+
+.conteudo {
+    cursor: default;
+}
+
+.conteudo h1 {
+    font-size: 10rem;
+    letter-spacing: 4px;
+}
+
+.conteudo h2 {
+    font-size: 4rem;
+    color: #feab51;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    /* Parte esqueda do site Navegação */
+    aside {
+        
+    }
+
+    .explore {
+        display: none;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .nav {
+        margin: auto;
+    }
+
+    .nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin: 10px 20px;
+    }
+
+    .nav ul li a {
+        font-size: 1rem;
+    }
+
+    /* Conteudo */
+    section {
+        margin-left: 40px;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .conteudo h1 {
+        font-size: 3.5rem;
+    }
+
+    .conteudo h2 {
+        font-size: 1.5rem;
+    }
+}
